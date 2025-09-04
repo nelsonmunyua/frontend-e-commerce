@@ -147,9 +147,8 @@ body{
     .hero-content p{
         font-size: 16px;
         margin-bottom: 30px;
-        color: #555;
+        color: #111;
         max-width: 1200px;
-        max-width: 500px;
     }
 
     /* Buttons */
@@ -201,6 +200,42 @@ body{
     span {
         display: inline-block;
     }
+
+    .trusted-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .trusted-section p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .trusted-section p strong {
+      color: #000;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .logos img {
+      max-height: 40px;
+      object-fit: contain;
+      filter: grayscale(0%); /* keep original colors */
+      transition: transform 0.3s ease;
+    }
+
+    .logos img:hover {
+      transform: scale(1.05);
+    }
+
+
 
     @media (max-width: 900px) {
       .hero {
